@@ -162,18 +162,19 @@ section { padding: 72px 0; }
 .nav-links a.cta:hover { background: var(--clay-dark); }
 
 /* Pure-CSS hamburger */
-.nav-toggle { display: none; }
+.nav-toggle { display:none; }
 .hamburger-label {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   cursor: pointer;
   z-index: 200;
+  padding-right: 10px;
 }
 .hamburger-label span {
-  width: 26px; height: 3px;
+  width: 30px; height: 3px;
   background: var(--white);
-  border-radius: 2px;
+  border-radius: 20px;
   transition: 0.3s ease;
 }
 
@@ -402,12 +403,12 @@ legend { font-weight: 600; color: var(--forest-dark); padding: 0 8px; }
   .nav-links {
     position: fixed;
     top: 0; right: -280px;
-    width: 260px; height: 100vh;
+    width: 180px; height: 100vh;
     background: var(--forest-dark);
     flex-direction: column;
     align-items: flex-start;
     padding: 90px 24px 24px;
-    transition: right 0.3s ease;
+    transition: left 0.3s ease;
     box-shadow: -6px 0 20px rgba(0,0,0,0.2);
     z-index: 150;
   }
